@@ -1,0 +1,722 @@
+{
+	"info": {
+		"_postman_id": "ab25e7f7-e475-4216-8083-6739e7e76be4",
+		"name": "APISharepointCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "GET all customer",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8081/customer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"customer"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GET all customer",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8081/customer",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"customer"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 01 May 2022 19:31:12 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 3,\n        \"name\": \"teste\",\n        \"notes\": \"teste\",\n        \"dbInfo\": \"teste\",\n        \"usesVpn\": false,\n        \"usesNewIntegration\": false,\n        \"tier\": \"A\",\n        \"segment\": \"teste\",\n        \"responsible\": \"teste\",\n        \"contacts\": [\n            {\n                \"id\": 2,\n                \"name\": \"contato\",\n                \"email\": \"contato\",\n                \"phone\": \"123121\",\n                \"cellphone\": \"123123\",\n                \"main\": false\n            }\n        ]\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Luan\",\n        \"notes\": \"\",\n        \"dbInfo\": \"\",\n        \"usesVpn\": true,\n        \"usesNewIntegration\": false,\n        \"tier\": \"A\",\n        \"segment\": \"programmer\",\n        \"responsible\": \"nd\",\n        \"contacts\": []\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Luan\",\n        \"notes\": \"\",\n        \"dbInfo\": \"\",\n        \"usesVpn\": true,\n        \"usesNewIntegration\": false,\n        \"tier\": \"A\",\n        \"segment\": \"developer\",\n        \"responsible\": \"nd\",\n        \"contacts\": []\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Luan\",\n        \"notes\": \"\",\n        \"dbInfo\": \"\",\n        \"usesVpn\": true,\n        \"usesNewIntegration\": false,\n        \"tier\": \"A\",\n        \"segment\": \"developer\",\n        \"responsible\": \"nd\",\n        \"contacts\": []\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Luan\",\n        \"notes\": \"\",\n        \"dbInfo\": \"\",\n        \"usesVpn\": true,\n        \"usesNewIntegration\": false,\n        \"tier\": \"A\",\n        \"segment\": \"developer\",\n        \"responsible\": \"nd\",\n        \"contacts\": []\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Luan\",\n        \"notes\": \"\",\n        \"dbInfo\": \"\",\n        \"usesVpn\": true,\n        \"usesNewIntegration\": false,\n        \"tier\": \"A\",\n        \"segment\": \"developer\",\n        \"responsible\": \"nd\",\n        \"contacts\": []\n    },\n    {\n        \"id\": 10,\n        \"name\": \"Luan\",\n        \"notes\": \"\",\n        \"dbInfo\": \"\",\n        \"usesVpn\": true,\n        \"usesNewIntegration\": false,\n        \"tier\": \"A\",\n        \"segment\": \"developer\",\n        \"responsible\": \"nd\",\n        \"contacts\": []\n    },\n    {\n        \"id\": 11,\n        \"name\": \"Luan\",\n        \"notes\": \"\",\n        \"dbInfo\": \"\",\n        \"usesVpn\": true,\n        \"usesNewIntegration\": false,\n        \"tier\": \"A\",\n        \"segment\": \"developer\",\n        \"responsible\": \"none\",\n        \"contacts\": []\n    },\n    {\n        \"id\": 12,\n        \"name\": \"Luan\",\n        \"notes\": \"\",\n        \"dbInfo\": \"\",\n        \"usesVpn\": true,\n        \"usesNewIntegration\": false,\n        \"tier\": \"A\",\n        \"segment\": \"developer\",\n        \"responsible\": \"none\",\n        \"contacts\": []\n    },\n    {\n        \"id\": 13,\n        \"name\": \"Luan\",\n        \"notes\": \"\",\n        \"dbInfo\": \"\",\n        \"usesVpn\": true,\n        \"usesNewIntegration\": false,\n        \"tier\": \"A\",\n        \"segment\": \"developer\",\n        \"responsible\": \"none\",\n        \"contacts\": []\n    },\n    {\n        \"id\": 14,\n        \"name\": \"Luan\",\n        \"notes\": \"\",\n        \"dbInfo\": \"\",\n        \"usesVpn\": true,\n        \"usesNewIntegration\": false,\n        \"tier\": \"A\",\n        \"segment\": \"developer\",\n        \"responsible\": \"none\",\n        \"contacts\": []\n    },\n    {\n        \"id\": 15,\n        \"name\": \"Luan\",\n        \"notes\": \"\",\n        \"dbInfo\": \"\",\n        \"usesVpn\": true,\n        \"usesNewIntegration\": false,\n        \"tier\": \"A\",\n        \"segment\": \"developer\",\n        \"responsible\": \"none\",\n        \"contacts\": []\n    }\n]"
+						},
+						{
+							"name": "GET all customer",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://api-sharepoint.eive.com.br:8081/customer",
+									"protocol": "http",
+									"host": [
+										"api-sharepoint",
+										"eive",
+										"com",
+										"br"
+									],
+									"port": "8081",
+									"path": [
+										"customer"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 01 May 2022 19:26:39 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"teste\",\n        \"notes\": \"teste\",\n        \"dbInfo\": \"teste\",\n        \"usesVpn\": false,\n        \"usesNewIntegration\": false,\n        \"tier\": \"A\",\n        \"segment\": \"teste\",\n        \"responsible\": \"teste\",\n        \"contacts\": [\n            {\n                \"id\": 3,\n                \"name\": \"\",\n                \"email\": \"\",\n                \"phone\": \"\",\n                \"cellphone\": \"\",\n                \"main\": false\n            },\n            {\n                \"id\": 5,\n                \"name\": \"contato\",\n                \"email\": \"contato\",\n                \"phone\": \"123121\",\n                \"cellphone\": \"123123\",\n                \"main\": false\n            },\n            {\n                \"id\": 6,\n                \"name\": \"contato\",\n                \"email\": \"contato\",\n                \"phone\": \"123121\",\n                \"cellphone\": \"123123\",\n                \"main\": false\n            },\n            {\n                \"id\": 7,\n                \"name\": \"contato\",\n                \"email\": \"contato\",\n                \"phone\": \"123121\",\n                \"cellphone\": \"123123\",\n                \"main\": false\n            },\n            {\n                \"id\": 8,\n                \"name\": \"contato\",\n                \"email\": \"contato\",\n                \"phone\": \"123121\",\n                \"cellphone\": \"123123\",\n                \"main\": false\n            },\n            {\n                \"id\": 9,\n                \"name\": \"contato\",\n                \"email\": \"contato\",\n                \"phone\": \"123121\",\n                \"cellphone\": \"123123\",\n                \"main\": false\n            }\n        ]\n    },\n    {\n        \"id\": 3,\n        \"name\": \"teste\",\n        \"notes\": \"teste\",\n        \"dbInfo\": \"teste\",\n        \"usesVpn\": false,\n        \"usesNewIntegration\": false,\n        \"tier\": \"A\",\n        \"segment\": \"teste\",\n        \"responsible\": \"teste\",\n        \"contacts\": [\n            {\n                \"id\": 2,\n                \"name\": \"contato\",\n                \"email\": \"contato\",\n                \"phone\": \"123121\",\n                \"cellphone\": \"123123\",\n                \"main\": false\n            }\n        ]\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Luan\",\n        \"notes\": \"\",\n        \"dbInfo\": \"\",\n        \"usesVpn\": true,\n        \"usesNewIntegration\": false,\n        \"tier\": \"A\",\n        \"segment\": \"programmer\",\n        \"responsible\": \"nd\",\n        \"contacts\": []\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Luan\",\n        \"notes\": \"\",\n        \"dbInfo\": \"\",\n        \"usesVpn\": true,\n        \"usesNewIntegration\": false,\n        \"tier\": \"A\",\n        \"segment\": \"developer\",\n        \"responsible\": \"nd\",\n        \"contacts\": []\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Luan\",\n        \"notes\": \"\",\n        \"dbInfo\": \"\",\n        \"usesVpn\": true,\n        \"usesNewIntegration\": false,\n        \"tier\": \"A\",\n        \"segment\": \"developer\",\n        \"responsible\": \"nd\",\n        \"contacts\": []\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Luan\",\n        \"notes\": \"\",\n        \"dbInfo\": \"\",\n        \"usesVpn\": true,\n        \"usesNewIntegration\": false,\n        \"tier\": \"A\",\n        \"segment\": \"developer\",\n        \"responsible\": \"nd\",\n        \"contacts\": []\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Luan\",\n        \"notes\": \"\",\n        \"dbInfo\": \"\",\n        \"usesVpn\": true,\n        \"usesNewIntegration\": false,\n        \"tier\": \"A\",\n        \"segment\": \"developer\",\n        \"responsible\": \"nd\",\n        \"contacts\": []\n    },\n    {\n        \"id\": 10,\n        \"name\": \"Luan\",\n        \"notes\": \"\",\n        \"dbInfo\": \"\",\n        \"usesVpn\": true,\n        \"usesNewIntegration\": false,\n        \"tier\": \"A\",\n        \"segment\": \"developer\",\n        \"responsible\": \"nd\",\n        \"contacts\": []\n    },\n    {\n        \"id\": 11,\n        \"name\": \"Luan\",\n        \"notes\": \"\",\n        \"dbInfo\": \"\",\n        \"usesVpn\": true,\n        \"usesNewIntegration\": false,\n        \"tier\": \"A\",\n        \"segment\": \"developer\",\n        \"responsible\": \"none\",\n        \"contacts\": []\n    },\n    {\n        \"id\": 12,\n        \"name\": \"Luan\",\n        \"notes\": \"\",\n        \"dbInfo\": \"\",\n        \"usesVpn\": true,\n        \"usesNewIntegration\": false,\n        \"tier\": \"A\",\n        \"segment\": \"developer\",\n        \"responsible\": \"none\",\n        \"contacts\": []\n    },\n    {\n        \"id\": 13,\n        \"name\": \"Luan\",\n        \"notes\": \"\",\n        \"dbInfo\": \"\",\n        \"usesVpn\": true,\n        \"usesNewIntegration\": false,\n        \"tier\": \"A\",\n        \"segment\": \"developer\",\n        \"responsible\": \"none\",\n        \"contacts\": []\n    },\n    {\n        \"id\": 14,\n        \"name\": \"Luan\",\n        \"notes\": \"\",\n        \"dbInfo\": \"\",\n        \"usesVpn\": true,\n        \"usesNewIntegration\": false,\n        \"tier\": \"A\",\n        \"segment\": \"developer\",\n        \"responsible\": \"none\",\n        \"contacts\": []\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "GET customer by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/customer/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"customer",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST customer",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"name\":\"Luan\",\r\n   \"notes\":\"\",\r\n   \"dbInfo\":\"\",\r\n   \"usesVpn\":true,\r\n   \"usesNewIntegration\":false,\r\n   \"tier\":\"A\",\r\n   \"segment\":\"developer\",\r\n   \"responsible\":\"none\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/customer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"customer"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "POST customer",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"name\":\"Luan\",\r\n   \"notes\":\"\",\r\n   \"dbInfo\":\"\",\r\n   \"usesVpn\":true,\r\n   \"usesNewIntegration\":false,\r\n   \"tier\":\"A\",\r\n   \"segment\":\"developer\",\r\n   \"responsible\":\"none\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/customer",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"customer"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 01 May 2022 19:28:13 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 15,\n    \"name\": \"Luan\",\n    \"notes\": \"\",\n    \"dbInfo\": \"\",\n    \"usesVpn\": true,\n    \"usesNewIntegration\": false,\n    \"tier\": \"A\",\n    \"segment\": \"developer\",\n    \"responsible\": \"none\",\n    \"contacts\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "PUT customer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"name\":\"Luan\",\r\n   \"notes\":\"\",\r\n   \"dbInfo\":\"\",\r\n   \"usesVpn\":true,\r\n   \"usesNewIntegration\":false,\r\n   \"tier\":\"A\",\r\n   \"segment\":\"programmer\",\r\n   \"responsible\":\"nd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/customer/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"customer",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "PUT customer",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"name\":\"Luan\",\r\n   \"notes\":\"\",\r\n   \"dbInfo\":\"\",\r\n   \"usesVpn\":true,\r\n   \"usesNewIntegration\":false,\r\n   \"tier\":\"A\",\r\n   \"segment\":\"programmer\",\r\n   \"responsible\":\"nd\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/customer/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"customer",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 01 May 2022 19:30:37 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"Luan\",\n    \"notes\": \"\",\n    \"dbInfo\": \"\",\n    \"usesVpn\": true,\n    \"usesNewIntegration\": false,\n    \"tier\": \"A\",\n    \"segment\": \"programmer\",\n    \"responsible\": \"nd\",\n    \"contacts\": [\n        {\n            \"id\": 3,\n            \"name\": \"\",\n            \"email\": \"\",\n            \"phone\": \"\",\n            \"cellphone\": \"\",\n            \"main\": false\n        },\n        {\n            \"id\": 5,\n            \"name\": \"contato\",\n            \"email\": \"contato\",\n            \"phone\": \"123121\",\n            \"cellphone\": \"123123\",\n            \"main\": false\n        },\n        {\n            \"id\": 6,\n            \"name\": \"contato\",\n            \"email\": \"contato\",\n            \"phone\": \"123121\",\n            \"cellphone\": \"123123\",\n            \"main\": false\n        },\n        {\n            \"id\": 7,\n            \"name\": \"contato\",\n            \"email\": \"contato\",\n            \"phone\": \"123121\",\n            \"cellphone\": \"123123\",\n            \"main\": false\n        },\n        {\n            \"id\": 8,\n            \"name\": \"contato\",\n            \"email\": \"contato\",\n            \"phone\": \"123121\",\n            \"cellphone\": \"123123\",\n            \"main\": false\n        },\n        {\n            \"id\": 9,\n            \"name\": \"contato\",\n            \"email\": \"contato\",\n            \"phone\": \"123121\",\n            \"cellphone\": \"123123\",\n            \"main\": false\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "DELETE customer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/customer/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"customer",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Contact",
+			"item": [
+				{
+					"name": "GET contact by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/contact/customer/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"contact",
+								"customer",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST contact",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"name\":\"Luan\",\r\n   \"email\":\"luan@gmail.com\",\r\n   \"phone\":\"\",\r\n   \"cellphone\":\"99999-9999\",\r\n   \"main\":true,\r\n   \"customer\": {\r\n       \"id\":1\r\n   }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/contact",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"contact"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT contact",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"name\":\"Luan Victorino\",\r\n   \"email\":\"luan@gmail.com\",\r\n   \"phone\":\"\",\r\n   \"cellphone\":\"99999-9999\",\r\n   \"main\":true,\r\n   \"customer\": {\r\n       \"id\":1\r\n   }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/contact/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"contact",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE contact",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/contact/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"contact",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Server",
+			"item": [
+				{
+					"name": "GET server by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/server/customer/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"server",
+								"customer",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST server",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ip\":\"127.0.0.1\",\r\n    \"dns\":\"\",\r\n    \"login\":\"\",\r\n    \"password\":\"root\",\r\n    \"name\":\"local\",\r\n    \"notes\":\"\",\r\n    \"customer\": {\r\n        \"id\":1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/server",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"server"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT server",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ip\":\"127.0.0.2\",\r\n    \"dns\":\"\",\r\n    \"login\":\"\",\r\n    \"password\":\"root\",\r\n    \"name\":\"local\",\r\n    \"notes\":\"\",\r\n    \"customer\": {\r\n        \"id\":1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/server/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"server",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE server",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/server/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"server",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "GET product by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/product/customer/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"product",
+								"customer",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"name\":\"Batata\",\r\n   \"notes\":\"\",\r\n   \"acquisitionDate\":\"\",\r\n   \"customer\": {\r\n       \"id\":1\r\n   }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/product",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"name\":\"Batata Frita\",\r\n   \"notes\":\"\",\r\n   \"acquisitionDate\":\"\",\r\n   \"customer\": {\r\n       \"id\":1\r\n   }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/product/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"product",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/product/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"product",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
